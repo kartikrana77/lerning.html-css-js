@@ -1,0 +1,42 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#box1 {
+    position: static;
+    background-color: rebeccapurple;
+    /* this is the default position top,right,left,bottom and z index have no effect*/
+}
+
+
+#box2 {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    background-color: red;
+    /* this is relative to itself top,right,bottom,left and z index work*/
+}
+
+
+#box3 {
+
+    position: absolute;
+    background-color: blue;
+    top: 10px;
+    left: 30px;
+    /* this is positoned relatively closest to its non static ansistors (removed from the flow)*/ 
+}
+
+#box4 {
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border: 2px solid black;
+    height: 30px;
+    width: 1900px;
+}
