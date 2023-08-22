@@ -1,0 +1,21 @@
+#navbar{
+    background-color: #0f1111;
+    color:aliceblue;
+}
+
+#amazon{
+    background-color: #f08804;
+    -webkit-text-fill-color: aliceblue;
+}
+
+#logo{
+    color: #f08804;
+    font-size: 25px;
+}
+
+.nav{
+    margin-right: 200px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
