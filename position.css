@@ -1,3 +1,8 @@
+body{
+    background-image: url("Saved files/dog.jpg.jpg");
+    background-size: cover;
+}
+
 div {
     height: 200px;
     width: 200px;
@@ -19,6 +24,10 @@ div {
     left: 30px;
     background-color: red;
     /* this is relative to itself top,right,bottom,left and z index work*/
+    z-index: 1;
+    /*overlaping elements with larger z index cover those whith smaller one like =1 is gteater than -1*/
+    background-image: url("https://th.bing.com/th/id/OIP.avb9nDfw3kq7NOoP0grM4wHaEK?pid=ImgDet&rs=1");
+    background-size: cover;
 }
 
 
@@ -28,7 +37,7 @@ div {
     background-color: blue;
     top: 10px;
     left: 30px;
-    /* this is positoned relatively closest to its non static ansistors (removed from the flow)*/ 
+    /* this is positoned relatively closest to its non static ansistors (removed from the flow)*/
 }
 
 #box4 {
@@ -39,4 +48,21 @@ div {
     border: 2px solid black;
     height: 30px;
     width: 1900px;
+    /* positioned related to browser (removes from the flow)*/
+}
+
+#box5 {
+
+    position: relative;
+    background-color: black;
+    color: white;
+    z-index: -1;
+}
+
+
+#box6 {
+    position: sticky;
+    top: 200px;
+    left: 40px;
+    /*position based on user scroll position*/
 }
