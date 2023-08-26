@@ -2,8 +2,8 @@ body{text-align: center;}
 
 
 div{
-    height: 100px;
-    width: 100px;
+    height: 30px;
+    width: 60px;
     display: inline-block;
     border: 2px solid black;
 }
@@ -12,7 +12,10 @@ div{
 #container{
     width: 800px;
     height: 200px;
-
+display: flex;
+flex-direction: row;
+/*it sets how the flex items are placed in flex container along with the axis and direction*/
+/* main axix is left to right*/
 }
 
 
@@ -37,5 +40,547 @@ div{
 
 
 #box5{
+    background-color: pink;
+}
+
+
+
+
+#container2{
+    width: 800px;
+    height: 200px;
+display: flex;
+flex-direction: row-reverse;
+/* main axis is right to left*/
+}
+
+
+#box12{
+    background-color: aqua;
+}
+
+
+#box22{
+    background-color: blueviolet;
+}
+
+
+#box32{
+    background-color: red;
+}
+
+
+#box42{
+    background-color: blue;
+}
+
+
+#box52{
+    background-color: pink;
+}
+
+
+
+
+
+#container3{
+    width: 800px;
+    height: 200px;
+display: flex;
+flex-direction: column;
+/* main axis is top to bottom*/
+}
+
+
+#box13{
+    background-color: aqua;
+}
+
+
+#box23{
+    background-color: blueviolet;
+}
+
+
+#box33{
+    background-color: red;
+}
+
+
+#box43{
+    background-color: blue;
+}
+
+
+#box53{
+    background-color: pink;
+}
+
+
+
+
+
+
+#container4{
+    width: 800px;
+    height: 200px;
+display: flex;
+flex-direction: column-reverse;
+}
+
+
+#box14{
+    background-color: aqua;
+}
+
+
+#box24{
+    background-color: blueviolet;
+}
+
+
+#box34{
+    background-color: red;
+}
+
+
+#box44{
+    background-color: blue;
+}
+
+
+#box54{
+    background-color: pink;
+}
+
+
+
+
+
+/*flex property contener justify content*/
+
+/*alignment along the main axis*/
+
+
+
+
+#container5{
+    width: 800px;
+    height: 200px;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+
+
+}
+
+
+#box15{
+    background-color: aqua;
+}
+
+
+#box25{
+    background-color: blueviolet;
+}
+
+
+#box35{
+    background-color: red;
+}
+
+
+#box45{
+    background-color: blue;
+}
+
+
+#box55{
+    background-color: pink;
+}
+
+
+
+
+
+#container6{
+    width: 800px;
+    height: 200px;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+
+
+#box16{
+    background-color: aqua;
+}
+
+
+#box26{
+    background-color: blueviolet;
+}
+
+
+#box36{
+    background-color: red;
+}
+
+
+#box46{
+    background-color: blue;
+}
+
+
+#box56{
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+#container7{
+    width: 800px;
+    height: 200px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+
+#box17{
+    background-color: aqua;
+}
+
+
+#box27{
+    background-color: blueviolet;
+}
+
+
+#box37{
+    background-color: red;
+}
+
+
+#box47{
+    background-color: blue;
+}
+
+
+#box57{
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+#container8{
+    width: 800px;
+    height: 200px;
+display: flex;
+direction: row;
+justify-content: space-evenly;
+
+}
+
+
+#box18{
+    background-color: aqua;
+}
+
+
+#box28{
+    background-color: blueviolet;
+}
+
+
+#box38{
+    background-color: red;
+}
+
+
+#box48{
+    background-color: blue;
+}
+
+
+#box58{
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+#container9{
+    width: 800px;
+    height: 200px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+
+#box19{
+    background-color: aqua;
+}
+
+
+#box29{
+    background-color: blueviolet;
+}
+
+
+#box39{
+    background-color: red;
+}
+
+
+#box49{
+    background-color: blue;
+}
+
+
+#box59{
+    background-color: pink;
+}
+
+
+
+
+
+#container10{
+    width: 800px;
+    height: 200px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+
+#box110{
+    background-color: aqua;
+}
+
+
+#box210{
+    background-color: blueviolet;
+}
+
+
+#box310{
+    background-color: red;
+}
+
+
+#box410{
+    background-color: blue;
+}
+
+
+#box510{
+    background-color: pink;
+}
+
+
+
+
+
+#container11{
+    width: 800px;
+    height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
+
+
+#box111{
+    background-color: aqua;
+}
+
+
+#box211{
+    background-color: blueviolet;
+}
+
+
+#box311{
+    background-color: red;
+}
+
+
+#box411{
+    background-color: blue;
+}
+
+
+#box511{
+    background-color: pink;
+}
+
+
+
+
+
+
+#container12{
+    width: 800px;
+    height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+}
+
+
+#box112{
+    background-color: aqua;
+}
+
+
+#box212{
+    background-color: blueviolet;
+}
+
+
+#box312{
+    background-color: red;
+}
+
+
+#box412{
+    background-color: blue;
+}
+
+
+#box512{
+    background-color: pink;
+}
+
+
+
+
+
+
+#container13{
+    width: 800px;
+    height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+
+#box113{
+    background-color: aqua;
+}
+
+
+#box213{
+    background-color: blueviolet;
+}
+
+
+#box313{
+    background-color: red;
+}
+
+
+#box413{
+    background-color: blue;
+}
+
+
+#box513{
+    background-color: pink;
+}
+
+
+
+
+#container14{
+    width: 800px;
+    height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+
+#box114{
+    background-color: aqua;
+}
+
+
+#box214{
+    background-color: blueviolet;
+}
+
+
+#box314{
+    background-color: red;
+}
+
+
+#box414{
+    background-color: blue;
+}
+
+
+#box514{
+    background-color: pink;
+}
+
+
+
+
+
+
+#container15{
+    width: 800px;
+    height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: space-between
+;
+}
+
+
+#box115{
+    background-color: aqua;
+}
+
+
+#box215{
+    background-color: blueviolet;
+}
+
+
+#box315{
+    background-color: red;
+}
+
+
+#box415{
+    background-color: blue;
+}
+
+
+#box515{
     background-color: pink;
 }
