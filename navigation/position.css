@@ -1,6 +1,10 @@
 body{
     background-image: url("Saved files/dog.jpg.jpg");
     background-size: cover;
+    background-attachment: fixed;
+    font-size: medium;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 div {
