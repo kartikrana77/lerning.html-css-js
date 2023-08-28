@@ -2,15 +2,15 @@ body{text-align: center;}
 
 
 div{
-    height: 30px;
-    width: 60px;
+    height: 50px;
+    width: 150px;
     display: inline-block;
     border: 2px solid black;
 }
 
 
 #container{
-    width: 800px;
+    width: 1000px;
     height: 200px;
 display: flex;
 flex-direction: row;
@@ -47,7 +47,7 @@ flex-direction: row;
 
 
 #container2{
-    width: 800px;
+    width: 1000px;
     height: 200px;
 display: flex;
 flex-direction: row-reverse;
@@ -84,7 +84,7 @@ flex-direction: row-reverse;
 
 
 #container3{
-    width: 800px;
+    width: 1000px;
     height: 200px;
 display: flex;
 flex-direction: column;
@@ -122,7 +122,7 @@ flex-direction: column;
 
 
 #container4{
-    width: 800px;
+    width: 1000px;
     height: 200px;
 display: flex;
 flex-direction: column-reverse;
@@ -165,7 +165,7 @@ flex-direction: column-reverse;
 
 
 #container5{
-    width: 800px;
+    width: 1000px;
     height: 200px;
 display: flex;
 flex-direction: row;
@@ -204,7 +204,7 @@ justify-content: flex-start;
 
 
 #container6{
-    width: 800px;
+    width: 1000px;
     height: 200px;
 display: flex;
 flex-direction: row;
@@ -246,7 +246,7 @@ justify-content: flex-end;
 
 
 #container7{
-    width: 800px;
+    width: 1000px;
     height: 200px;
 display: flex;
 flex-direction: row;
@@ -287,7 +287,7 @@ justify-content: center;
 
 
 #container8{
-    width: 800px;
+    width: 1000px;
     height: 200px;
 display: flex;
 direction: row;
@@ -328,7 +328,7 @@ justify-content: space-evenly;
 
 
 #container9{
-    width: 800px;
+    width: 1000px;
     height: 200px;
 display: flex;
 flex-direction: row;
@@ -365,7 +365,7 @@ justify-content: space-around;
 
 
 #container10{
-    width: 800px;
+    width: 1000px;
     height: 200px;
 display: flex;
 flex-direction: row;
@@ -403,7 +403,7 @@ justify-content: space-between;
 
 #container11{
     width: 800px;
-    height: 200px;
+    height: 500px;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
@@ -441,7 +441,7 @@ justify-content: flex-start;
 
 #container12{
     width: 800px;
-    height: 200px;
+    height: 500px;
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
@@ -479,7 +479,7 @@ justify-content: flex-end;
 
 #container13{
     width: 800px;
-    height: 200px;
+    height: 500px;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -515,7 +515,7 @@ justify-content: center;
 
 #container14{
     width: 800px;
-    height: 200px;
+    height: 500px;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
@@ -553,7 +553,7 @@ justify-content: space-around;
 
 #container15{
     width: 800px;
-    height: 200px;
+    height: 500px;
 display: flex;
 flex-direction: column;
 justify-content: space-between
@@ -582,5 +582,210 @@ justify-content: space-between
 
 
 #box515{
+    background-color: pink;
+}
+
+
+
+
+/*align content*/
+
+
+#container16{
+    width: 600px;
+    height: 600px;
+display: flex;
+flex-direction: row;
+justify-content: center
+;
+flex-wrap: wrap;
+align-items: center;
+align-content: center;
+}
+
+
+
+#box116{
+    background-color: aqua;
+    height: 60px;
+    
+}
+
+
+#box216{
+    background-color: blueviolet;
+    height: 150px;
+}
+
+
+#box316{
+    background-color: red;
+    height: 60px;
+}
+
+
+#box416{
+    background-color: blue;
+
+}
+
+
+#box516{
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+#container17{
+    width: 600px;
+    height: 600px;
+display: flex;
+flex-direction: row;
+justify-content: center
+;
+flex-wrap: wrap;}
+
+
+
+
+#box117{
+    background-color: aqua;
+    
+    align-self: center;
+}
+/*align-self aligne elements individualy in a container*/
+
+#box217{
+    background-color: blueviolet;
+    
+    align-self: flex-start;
+}
+
+
+#box317{
+    background-color: red;
+    
+}
+
+
+#box417{
+    background-color: blue;
+align-self: flex-end;
+}
+
+
+#box517{
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+#container18{
+    width: 600px;
+    height: 300px;
+display: flex;
+flex-direction: row;
+justify-content: center
+;
+}
+
+
+
+
+#box118{
+    background-color: aqua;
+    
+    
+}
+
+
+#box218{
+    background-color: blueviolet;
+    
+    flex-shrink: 3;
+}
+
+
+#box318{
+    background-color: red;
+    
+}
+
+
+#box418{
+    background-color: blue;
+
+}
+
+
+#box518{
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#container19{
+    width: 1000px;
+    height: 300px;
+display: flex;
+flex-direction: row;
+justify-content: center
+;
+}
+
+
+
+
+#box119{
+    background-color: aqua;
+    
+
+}
+
+
+#box219{
+    background-color: blueviolet;
+    
+}
+
+
+#box319{
+    background-color: red;
+    flex-grow: 3;
+    height: 60px;
+}
+
+
+#box419{
+    background-color: blue;
+
+}
+
+
+#box519{
     background-color: pink;
 }

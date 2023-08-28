@@ -1,21 +1,52 @@
 #navbar{
     background-color: #0f1111;
     color:aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
 }
 
 #amazon{
     background-color: #f08804;
     -webkit-text-fill-color: aliceblue;
-}
+    margin-left: -300px;
+    margin-right: 20px;}
+  
 
 #logo{
     color: #f08804;
     font-size: 25px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 500;
 }
 
+
 .nav{
-    margin-right: 200px;
     color: aliceblue;
     text-decoration: none;
+    font-size: 18px;
+}
+
+
+#box1{
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 300px;
+    left: 700px;
+
+}
+
+
+#box2{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
 }
 
