@@ -24,3 +24,10 @@
         background-color: pink;
     }
 }
+
+
+@media (min-width :300px) and (max-width : 400px) {#box{
+    color: blue;
+    font-size: larger;
+    font-family: fantasy; 
+}}

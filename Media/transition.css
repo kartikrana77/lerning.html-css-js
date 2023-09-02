@@ -1,0 +1,26 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    /*transition:all;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+    transition-delay: 1ms;*/
+    transition: all 250ms ease-in-out 1ms;
+}
+
+div:hover{
+
+    background-color: red;
+    color: white;
+    border: 3px solid blue;
+    font-size: 20px;
+}
+
+div:active{
+    background-color: blue;
+    color: yellow;
+    border: gray 2px solid;
+    font-size: 30px;
+}
