@@ -1,0 +1,51 @@
+#div1{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    animation: slidingbox 2s ease-out 0.5ms infinite alternate;
+    background-color: aqua;
+}
+ @keyframes slidingbox { from{background-color: aqua;
+
+left: 0px;}
+ to{background-color: blue; 
+
+left: 300px;}
+
+ }
+
+ 
+    
+ #div2{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 800px;
+    left: 100px;
+    animation: bouncingball 2s ease-out 0.5ms infinite alternate;
+    background-color: aqua;
+    border-radius: 50%;
+    text-align: center;
+ }
+
+ @keyframes bouncingball {
+0%{
+    background-color: aqua;
+    top: 500px;
+}    
+25%{
+    
+    background-color: aquamarine;
+}
+
+50%{
+    
+    background-color: teal;}
+     
+    100%{
+        top: 800px;
+        background-color: blue;
+    }
+ }

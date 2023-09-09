@@ -34,7 +34,7 @@
     height: 400px;
     width: 400px;
     background-color: aqua;
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -47,6 +47,7 @@
 #box2{
     height: 200px;
     width: 200px;
-    background-color: blue;
-}
+    background-color: blue;}
+
+
 
