@@ -1,77 +1,187 @@
-body{
-    background-color: aqua;
+body {
+  background-color: cyan;
 }
-h1{
-    text-align: center;
-    color: red;
-    text-decoration: underline 4px solid blue;
+h1 {
+  text-align: center;
+  color: red;
+  text-decoration: underline 4px solid blue;
 }
 .k {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: 500;
+}
+
+.img1 {
+  background-image: url("https://www.thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg");
+  background-size: cover;
+  height: 500px;
+  width: 500px;
+}
+
+#img {
+  text-align: center;
+}
+
+#mt {
+  margin-left: 800px;
+}
+
+hr {
+  height: 3px;
+  width: 200px;
+  background-color: black;
+}
+
+#div1 {
+  height: 60px;
+
+  background-color: black;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#logo {
+  color: #f08804;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.a1 {
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+}
+ 
+
+
+#button1 {
+  background-color: #f08804;
+  color: white;
+  margin-left: 2px;
+}
+
+#cont {
+  margin-right: 10px;
+}
+
+#search {
+  width: 50%;
+  height: 50%;
+}
+#searchbar {
+  width: 88%;
+  height: 80%;
+
+  transition: all 100ms ease-in-out 100ms;
+}
+
+#searchbar:hover{
+  border: #f08804 2px solid;
+}
+
+#button1{
+  height: 100%;
+  width: 7%;
+}
+
+.nav{
+  display: inline;
+  transition: all 100ms ease-in-out 100ms;
+}
+
+.nav :hover{
+  border: 2px solid white;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  border: 2px solid black;
+}
+
+#box1 {
+  position: static;
+}
+
+#box2 {
+  position: relative;
+  top: 30px;
+  left: 20px;
+  z-index: 1;
+}
+
+#box3 {
+  position: absolute;
+  top: 40px;
+}
+
+#box4 {
+  position: fixed;
+  top: 200px;
+}
+
+#media1{
+  height: 200px;
+  width: 200px;
+  background-color: #f08804;
+  animation: bouncingball 3s ease-in-out 1ms infinite alternate;
+  border-radius: 50%;
+  position: absolute;
+  
+}
+
+@keyframes bouncingball{
+  0%{left : 0px;
+  background-color: teal;}
+
+  25%{background-color: #f08804;}
+
+  50%{
+    background-color: blue;
+  }
+
+  100%{
+    left: 300px;
+    background-color: red;
+  }
+}
+
+
+@media(min-width : 300px) and (max-width: 600px){
+  #media1{
+    background-color: blue;
+    font-size: small;
+    color: red;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    font-weight: 500;
-    
+  }
 }
-
-.img1{
-    background-image: url("https://www.thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg");
-    background-size: cover;
-    height: 500px;
-    width: 500px;
-    
+.container{
+  border:2px solid black;
+  display: grid;
+  grid-template-columns: [a]120px [b]100px[c];
+  grid-template-rows: 100px 100px 100px;
 }
-
-#img{
-    text-align: center;
-}
-
-#mt{
-    margin-left: 800px;
-    
-}
-
-hr{
-    height: 3px;
-    width: 200px;
-    background-color: black;
-}
-
-#div1{
-    height: 60px;
-    
-    background-color: black;
-    
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+ .item{
+  border: 2px solid red;
+  height: 55px;
+  width: 55px;
+ 
+ }
+  .item-4{
+    grid-row: 1/2;
+    grid-column: a/b;
+    /*or you can do*/
+    grid-row-start: 1;
+    grid-row-end: 2;
    
+  }
 
-
-}
- #logo{
-   color: #f08804;
-   font-size: 25px;
- margin-left: 10px;
-   
- }
-
-
- .a1{
-    text-decoration: none;
-    color: white;
-    
- }
- #button1{
-    background-color: #f08804;
-    color: white;
-    margin-left:2px ;
- }
-
- #search{
-    margin-right: 10px;
- }
- 
- 
- 
+  .item-1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
