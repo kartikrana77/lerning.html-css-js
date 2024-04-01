@@ -11,39 +11,116 @@
 <body>
     <h1>Bat Ball Stump Game</h1>
 
-    
+
     <button onclick="
 
-    console.log('you have chosen bat');
+    
+
     let randomNumb  = Math.random()*3;//this will genrate random numb bw 0-3
 
+    let computerChoice;
+
     if(randomNumb > 0 && randomNumb <= 1){
-let computerChoice = 'Bat'
-console.log('computer Choice is Bat');
+         computerChoice = 'Bat'
  }
 
  else if(randomNumb > 1 && randomNumb <=2){
-    let computerChoice = 'Ball'
-    console.log('computer Choice is Ball');
+     computerChoice = 'Ball'
  }
 
  else{
-    let computerChoice = 'Stump'
-    console.log('computer Choice is Stump');
+   computerChoice = 'Stump'
  }
  
+
+
+let resultMsg ;
+
  if (computerChoice === 'Ball'){
-    console.log('user won')
+    resultMsg= ('user won');
+ }
+
+ else if (computerChoice === 'Bat'){
+    resultMsg=('draw');
+
+}
+ else {
+    resultMsg=('computer won');
  }
  
- 
+ alert(`You have chossen bat.Computer choice is ${computerChoice} and ${resultMsg}`);
  
  ">Bat</button>
 
+
     <button onclick="
     
+    randomNumb = Math.random()*3;
+
+    if(randomNumb > 0 && randomNumb <= 1){
+        computerChoice = 'Bat'
+    }
+
+    else if(randomNumb > 1 && randomNumb <=2){
+        computerChoice = 'Ball'
+    }
+
+    else{
+        computerChoice ='Stump'
+    }
+
     
+
+    if(computerChoice === 'Bat'){
+        resultMsg = ('computer won');
+    }
+
+    else if(computerChoice === 'Ball'){
+        resultMsg =('Draw');
+    }
+
+    else{
+        resultMsg =('user won');
+    }
+    
+    alert(`You have chossen ball. Computer choice is ${computerChoice} and ${resultMsg}`)
     ">Ball</button>
-    <button>Stump</button>
+
+
+
+
+    <button onclick="
+     randomNumb = Math.random()*3;
+
+if(randomNumb > 0 && randomNumb <= 1){
+    computerChoice = 'Bat'
+}
+
+else if(randomNumb > 1 && randomNumb <=2){
+    computerChoice = 'Ball'
+}
+
+else{
+    computerChoice ='Stump'
+}
+
+
+
+if(computerChoice === 'Bat'){
+    resultMsg = ('user won');
+}
+
+else if(computerChoice === 'Ball'){
+    resultMsg =('computer won');
+}
+
+else{
+    resultMsg =('Draw');
+}
+
+alert(`You have chossen Stump. Computer choice is ${computerChoice} and ${resultMsg}`)
+    "
+    >Stump</button>
+
 </body>
 </html>
