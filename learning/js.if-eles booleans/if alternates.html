@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-alternatives</title>
+</head>
+<body>
+    <script>/*
+        let age = 31;
+        let result;
+        if(age > 18){
+            result = 'adult'
+        }
+        else{
+            result = 'kid'
+        }*/
+
+
+        /*  let age = 31;//ternary operator(one line if- else)
+        let result = age > 18 ? 'adult' : 'kid' ;
+        console.log(result);  */
+
+        //Guard operator
+
+        let age = 0;
+        let finalAge = age || 18 ;
+        console.log(age);
+        console.log(finalAge);
+
+        // default operator it dose not consider 0 as falsy 
+        let price = 0  ;
+        let finalPrice = price ?? 18;
+        console.log(price);
+        console.log(finalPrice);
+    </script>
+</body>
+</html>

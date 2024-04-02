@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      let age = 21;
+      function printAge() {
+        console.log(`your age is ${age}`);
+      }
+      printAge();
+      age = 76;
+      printAge();
+      age = 41;
+      printAge();
+
+      function drivingStatus() {
+        age = 19;
+        if (age === undefined) {
+          return "aap avtar ha";
+        }
+        if (age > 18) {
+          return "you can drive";
+        } else {
+          return "you can not drive";
+        }
+      }
+      console.log(drivingStatus());
+
+      function sum(a, b) {
+        let sum = a + b;
+        return sum;
+      }
+
+      console.log(sum(2, 4));
+      console.log(sum(4, 6));
+      console.log(sum(6, 7));
+
+      function greating(name = 'Pyaare'){
+        console.log(`hello ${name} uncle`);
+      }
+
+      greating();
+
+    </script>
+  </body>
+</html>

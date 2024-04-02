@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cricket game</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>Bat Ball Stump Game</h1>
+
+    <button
+      onclick=" 
+      let computerChoice = genrateCompChoice();
+      let resultMsg = getResult('Bat', computerChoice);
+      showResult('Bat', computerChoice, resultMsg);
+      "
+    > Bat </button>
+
+    <button
+      onclick="
+      computerChoice = genrateCompChoice();
+      resultMsg = getResult('Ball', computerChoice);
+      showResult('Ball', computerChoice, resultMsg);
+      " 
+      >Ball</button>
+
+    <button
+      onclick="
+     computerChoice = genrateCompChoice();
+     resultMsg =getResult('Stump',computerChoice);
+     showResult('Stump', computerChoice , resultMsg);
+    "
+    >Stump</button>
+
+    <script src="cricket.js">    </script>
+  </body>
+</html>

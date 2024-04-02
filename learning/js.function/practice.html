@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checknum(a){
+            if(a % 2 == 0){
+                return 'its a even num';
+            }
+            else{
+                return 'its a odd num';
+            }
+        }
+        console.log(checknum(5));
+
+        function findlarge(a ,b){
+            if(a > b){
+                return `${a} ,is larger than ${b}`;
+            }
+            else{
+                return `${b} , is larger than ${a}`;
+            }
+        }
+        let c = 5;
+        let h = 8;
+        console.log(findlarge(c,h));
+
+function tempConvt(c){
+    return  (9/5) *c + 32;
+}
+console.log(tempConvt(20));
+
+    </script>
+</body>
+</html>
