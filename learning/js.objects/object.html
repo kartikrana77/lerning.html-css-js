@@ -32,6 +32,37 @@
         }
        };
        product2.displayPrice();
+
+       console.log('this is KR'.toUpperCase());
+       console.log('this is KR'.replace('KR','Kartik Rana'));
+
+       let x = {
+        num: 3,
+       }
+       let y = x;
+
+       console.log(`x=${x.num}, y =${y.num}`);
+       x.num = 8;
+       console.log(`x=${x.num}, y =${y.num}`);
+
+       let p ={
+        lms : 'kar'
+       };
+       let q ={
+        lms:  'kar'
+       };
+
+       console.log(p === q);
+       console.log(p.lms === q.lms);
+       
+       let product3 ={
+        company: 'Banana',
+        'item-name': 'T-shirt',
+        price: 300,
+       }
+       let {company , price} = product3;
+       console.log(company);
+       console.log(price);
     </script>
 </body>
 </html>
