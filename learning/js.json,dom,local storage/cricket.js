@@ -13,6 +13,7 @@ function resetScore(scoreStr){
   score.displayScore = function(){
     return `Win ${score.Win} , Lost ${score.Lost} , Draw ${score.Draw}`
   };
+  showResult();
 }
 ;
 
@@ -31,7 +32,7 @@ function genrateCompChoice() {
     if (userMove === "Bat") {
       if (CompMove === "Ball") {
         score.Win++;
-        return "user won";
+        return "User won";
       } else if (CompMove === "Bat") {
         score.Draw++
         return "Draw";
@@ -48,7 +49,7 @@ function genrateCompChoice() {
         return "Computer won";
       } else {
         score.Win++;
-        return "user won";
+        return "User won";
       }
     } else {
       if (CompMove === "Stump") {
@@ -67,8 +68,12 @@ function genrateCompChoice() {
 
   function showResult(userMove , CompMove , result){
     localStorage.setItem('score', JSON.stringify(score));
-    alert(`You have chossen ${userMove}. Computer choice is ${CompMove} and ${result}`);
-    document.querySelector('#score').innerText =`${score.displayScore()}`;
+    document.querySelector('#score').innerText = score.displayScore();
+    document.querySelector('#user-move').innerText = 
+    userMove !==undefined ?`User move =${userMove}`: userMove = '0';
+    document.querySelector('#comp-move').innerText = 
+    CompMove !== undefined ?`Computer move =${CompMove}`: CompMove = '0';
+    document.querySelector('#result').innerText = result || '0';
   }
   
  

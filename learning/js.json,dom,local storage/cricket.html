@@ -4,50 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cricket game</title>
-    <style>
-      body {
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="cricket.css">
   </head>
   <body>
+    
     <h1>Bat Ball Stump Game</h1>
-
+  
     <button
-      onclick=" 
+      class="my-button" onclick=" 
       let computerChoice = genrateCompChoice();
       let resultMsg = getResult('Bat', computerChoice);
       showResult('Bat', computerChoice, resultMsg);
       "
     >
-      Bat
+      <img  class="my-img" src="cricket.pic/bat.png" alt="Bat">
     </button>
 
     <button
-      onclick="
+      class="my-button" onclick="
       computerChoice = genrateCompChoice();
       resultMsg = getResult('Ball', computerChoice);
       showResult('Ball', computerChoice, resultMsg);
       "
     >
-      Ball
+      <img class="my-img" src="cricket.pic/ball.png" alt="Ball">
     </button>
 
     <button
-      onclick="
+      class="my-button" onclick="
      computerChoice = genrateCompChoice();
      resultMsg =getResult('Stump',computerChoice);
      showResult('Stump', computerChoice , resultMsg);
     "
     >
-      Stump
+      <img class="my-img" src="cricket.pic/stump.png" alt="Stump">
     </button>
 
+    <div id="game">
+      <h3 id="user-move"></h3>
+      <h3 id="comp-move"></h3>
+      <h3 id="result"></h3>
+    </div>
     <h1 id="score">Win = 0 , Loss = 0 , Draw = 0</h1>
-    <button id="clear"onclick="localStorage.clear()
+    <button
+      id="clear"
+      onclick="localStorage.clear()
     resetScore();
-    ">Clear</button>
-
-    <script src="cricket.js" ></script>
+    "
+    >
+      Clear
+    </button>
+    </div>
+    <script src="cricket.js"></script>
   </body>
 </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date and Dom</title>
+  </head>
+  <body>
+    <!--<button class="click" onclick="alert(myDate);">time</button>
+ 
+  --><div class="my-div">Kartik</div>
+    <script>
+      let myDate = new Date();
+        console.log(myDate);
+        console.log(myDate.getDay());
+        console.log(myDate.getFullYear());
+        console.log(myDate.getHours());
+
+      let button = document.createElement("Button");
+      button.innerText = 'click me';
+      button.classList = 'bt';
+      document.querySelector(".my-div").appendChild(button);
+      // document.querySelector('.my-div').removeChild(button);
+    </script>
+  </body>
+</html>
