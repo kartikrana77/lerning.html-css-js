@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        let numb = [1,2,3,4 ,5,5,6];
+        console.log(numb.length);
+        console.log(numb[5]);
+
+        let numb2 = [1, 'hello', true , null];
+        console.log(numb2[3]);
+        console.log(typeof numb2);
+
+        let uk = {
+            name : 'tk',
+        }
+
+        console.log(Array.isArray(uk));
+        console.log(Array.isArray(numb2));
+
+        numb.push(9,76);
+        console.log(numb);
+        console.log('poped '+ numb.pop());
+        console.log(numb);
+        console.log('shifted ' + numb.shift());
+        console.log(numb);
+        numb.unshift(4);
+        console.log(numb);
+        numb.splice(3,2);
+        console.log(numb);
+        console.log(numb.toString());
+        numb.sort();
+        console.log(numb);
+        console.log(numb.valueOf());
+
+        let numb3 = numb;
+        numb3[1] = 57;
+        console.log(numb);
+
+        let[a,b,c] = numb;
+        console.log(a , b , c)
+    </script>
+</body>
+</html>
