@@ -4,73 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-        .js-odd{
-            background-color: aqua;
-        }
-        .js-even{
-            background-color: brown;
-        }
-    </style>
+   <link rel="stylesheet" href="p.css">
   </head>
   <body>
-    <h3 id="g"></h3>
-
-    <button id="b1" onclick="press()"></button>
-    <script>
-
-let count = localStorage.getItem('click')||0;
-
-
- function press(){
-   
-    count++;
-   localStorage.setItem('click' , count)
-    update();
-    
- }
-
- function update(){
-    let button = document.querySelector('#b1');
-    if(count % 2 === 0){
-button.classList.add('js-even');
-button.classList.remove('js-odd');
-    }
-    else{
-        button.classList.add('js-odd');
-        button.classList.remove('js-even');
-    }
-    button.innerText = count;
- }
-update()
-
-
-
-
-
-
-
-
-
-
-     function greeting(personName = 'Dear'){
-           
-     let date = new Date();
-     let hours = date.getHours();
-     let text = document.querySelector('#g');
-
-     if(hours>=5 && hours <12){
-        text.innerText = `Good Morning ${personName}`;
-     }
-
-     else if(hours >= 13 && hours <20){
-        text.innerText = `Good Evening ${personName}`;
-     }
-     else{
-        text.innerText = `Good Night ${personName}`;
-     }
-     }
-     greeting();
-    </script>
+   <div id="nav">
+    <div id="logo">Amazon.in</div>
+    <div id="search-bar">
+      <input placeholder="search Amazon" id="search-input" type="text">
+      <button id="search-butt">Search</button>
+    </div>
+   <div id="h">
+    <a class ="h-div" id="acc" href="#">Account</a>
+    <a class="h-div" id="car" href="#">Mycart</a>
+    <a class="h-div"  id="con" href="#">Contact</a>
+   </div>
+   </div>
+   <button id="b1">hello</button>
+   <script>
+    let but = document.querySelector('#b1');
+let a=()=>{
+  but.style.background='red';
+}
+but.addEventListener('click',a)
+   </script>
   </body>
 </html>

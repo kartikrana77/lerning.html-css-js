@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #b1{
+            margin-top: 10px;
+            margin-left: 30px;
+            width: 50px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <button id="b1">hello</button>
+    <script>
+
+      let a = (a,b) => console.log(a*b);
+      a(4,5);
+
+
+      let printGreating = ()=> console.log('hello');
+
+      let runTwice = input => {
+        input();
+        input();
+      }
+runTwice(printGreating);
+
+
+let but = document.querySelector('#b1');
+
+let grow = ()=> but.style.transform ='scale(2)';
+let fun = event => {setTimeout(grow,2000);}
+but.addEventListener('click',fun);
+
+let arr = [1,2,3,4,5];
+let b = 0;
+
+let sum = (arr,sum)=>{
+    arr.forEach(num => sum += num);
+    console.log(sum);
+};
+sum(arr,b);
+
+let square = arr.map(num => num* num);
+console.log(square);
+
+    </script>
+</body>
+</html>

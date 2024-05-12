@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listner</title>
+</head>
+<body>
+    <button id="my-button">0</button>
+    
+    <script>
+        let count = 0;
+let buttonElement = document.querySelector('#my-button');
+let fun = event => {count ++;
+    buttonElement.innerText = count;}
+buttonElement.addEventListener('click',fun);
+
+let fun2 = event => console.log(new Date());
+buttonElement.addEventListener('click',fun2);
+buttonElement.removeEventListener('click',fun2)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timeout and interval</title>
+</head>
+<body>
+    <script>
+        // setTimeout(function(){
+        //     console.log('subha ho gai mamu')
+        // }, 3000);
+
+        let alarm = () => console.log(`subha ho gai mamu , ${new Date()}`);
+
+        // let timerId = setTimeout(alarm,5000);
+        // console.log(`id = ${timerId}`);
+
+        // clearTimeout(timerId);
+
+        let intervalId = setInterval(alarm, 5000);
+        setTimeout(()=> clearInterval(intervalId),10000);
+
+    </script>
+</body>
+</html>
