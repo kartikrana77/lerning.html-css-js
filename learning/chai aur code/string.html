@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = "kartik";
+
+        const gameName = new String('kar-tik');
+
+        console.log(name);
+        console.log(gameName);
+
+        console.log(gameName[0]);
+        console.log(gameName.__proto__);
+        console.log(gameName.length);
+        console.log(name.toUpperCase());
+        console.log(name.charAt(2));
+        console.log(name.indexOf('t'));
+
+        let newString = gameName.substring(0,4);
+        console.log(newString);
+
+        const anotherString = gameName.slice(-6,4);
+        console.log(anotherString);
+
+        newString = "     kartik   ";
+        console.log(newString);
+        console.log(newString.trim());
+
+        let url = "https://kartik.com/kartik%20Rana";
+        console.log(url.replace('%20', '-'));
+
+        console.log(url.includes('kartik'));
+
+        console.log(name.split('').reverse().join(''));
+
+    </script>
+</body>
+</html>
