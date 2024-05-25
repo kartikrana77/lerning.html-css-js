@@ -27,6 +27,24 @@
     let arr = [1,2,3,4,5];
     let square = arr.map(num => num * num);
     console.log(square);
+
+    let map = new Map();
+    map.set('In', 'India');
+    map.set('fr', 'france');
+    map.set('In','India');
+    console.log(map);
+
+    for (const key of map) {
+        console.log(key);
+    }
+
+    for (const [key , value] of map) {
+        console.log(key +'='+ value);
+    }
+
+    // for (const key in map) {
+    //     console.log(map[key])
+    // }
         </script>
 
 </body>

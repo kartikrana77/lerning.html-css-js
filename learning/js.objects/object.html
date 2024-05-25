@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Objects</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        let product ={
-    company : 'Mango',
+      let product = {
+        company: "Mango",
 
-    price: 861,
+        price: 861,
 
-    item_name: 'T-shirt',
-
-        };
-       /*console.log(product.company);
+        item_name: "T-shirt",
+      };
+      /*console.log(product.company);
        console.log(product.price);
        console.log(product.item_name);
 
@@ -23,46 +22,77 @@
        console.log(product.company);
        console.log(product['company']);*/
 
-       let product2 ={
-        company: 'Mango',
+      let product2 = {
+        company: "Mango",
         price: 700,
-        'item-name': 'T-shirt',
-        displayPrice : function(){
-            console.log(`price of the product is $${this.price}`);
-        }
-       };
-       product2.displayPrice();
+        "item-name": "T-shirt",
+        displayPrice: function () {
+          console.log(`price of the product is $${this.price}`);
+        },
+      };
+      product2.displayPrice();
 
-       console.log('this is KR'.toUpperCase());
-       console.log('this is KR'.replace('KR','Kartik Rana'));
+      console.log("this is KR".toUpperCase());
+      console.log("this is KR".replace("KR", "Kartik Rana"));
 
-       let x = {
+      let x = {
         num: 3,
-       }
-       let y = x;
+      };
+      let y = x;
 
-       console.log(`x=${x.num}, y =${y.num}`);
-       x.num = 8;
-       console.log(`x=${x.num}, y =${y.num}`);
+      console.log(`x=${x.num}, y =${y.num}`);
+      x.num = 8;
+      console.log(`x=${x.num}, y =${y.num}`);
 
-       let p ={
-        lms : 'kar'
-       };
-       let q ={
-        lms:  'kar'
-       };
+      let p = {
+        lms: "kar",
+      };
+      let q = {
+        lms: "kar",
+      };
 
-       console.log(p === q);
-       console.log(p.lms === q.lms);
-       
-       let product3 ={
-        company: 'Banana',
-        'item-name': 'T-shirt',
+      console.log(p === q);
+      console.log(p.lms === q.lms);
+
+      let product3 = {
+        company: "Banana",
+        "item-name": "T-shirt",
         price: 300,
-       }
-       let {company , price} = product3;
-       console.log(company);
-       console.log(price);
+      };
+      let { company, price: pr} = product3;
+      console.log(company);
+      console.log(pr);
+
+      let mySym = Symbol("hello");
+      let obj = {
+        [mySym]: "hell 1",
+        price: 200,
+        email: "kartik@2005",
+      };
+
+      console.log(typeof obj[mySym]);
+    //   Object.freeze(obj);
+      obj.price = 300;
+      console.log(obj.price);
+      console.log(obj);
+
+      obj.great = () => `hello ${obj.email}`;
+
+    console.log( typeof obj.great)
+
+    let obj1 = {1:'a', 2: 'b'};
+    let obj2 = {3:'c', 4: 'd'};
+
+    let obj3 = Object.assign({} ,obj1 , obj2);
+
+    let object4 = {...obj1, ...obj2};
+
+
+    console.log(obj3);
+    console.log(object4);
+
+
+   console.log(obj);
     </script>
-</body>
+  </body>
 </html>

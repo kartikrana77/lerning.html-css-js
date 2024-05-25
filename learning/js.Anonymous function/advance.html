@@ -23,7 +23,28 @@
         };
 
         console.log(sum(3,2));
+
+    const user = {
+        username : 'karitk',
+        price : 200,
+
+        welcome : function (){
+            console.log(`${this.username},welcome`);
+            console.log(this);
+        }
+    }
+
+    user.welcome();
+    user.username = 'kart';
+    user.welcome();
         
+    console.log(this);
+
+    let chai =()=>{
+        let user = "kartik";
+        console.log(this.user);
+    }
+    chai();
     </script>
 </body>
 </html>

@@ -33,6 +33,16 @@
         let finalPrice = price ?? 18;
         console.log(price);
         console.log(finalPrice);
+
+        let val1;
+        val1 = null ?? 10;
+        console.log(val1);
+        val1 = undefined ?? 15;
+        console.log(val1);
+        val1 = null ?? 10 ?? 12;
+        console.log(val1);
+        val1 = null ?? undefined ?? 30;
+        console.log(val1);
     </script>
 </body>
 </html>

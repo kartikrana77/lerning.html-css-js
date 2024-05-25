@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,2,3,4,5];
+
+        for (const i of arr) {
+            console.log(i);
+        };
+
+        let name = 'kartik';
+
+        for (const i of name) {
+            console.log(i);
+        }
+
+
+        let obj1 = {
+            js: 'java script',
+            cpp : 'c++',
+            rb : 'ruby',
+            swift : 'swift by apple',
+        }
+        for (const key in obj1) {
+            console.log(`${key} : ${obj1[key]}`);
+        }
+
+        let arrP = ['a','b','c','d','e'];
+        for (const key in arrP) {
+            console.log(arrP[key]);
+        }
+    </script>
+</body>
+</html>

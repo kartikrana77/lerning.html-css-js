@@ -15,6 +15,18 @@
         console.log(myDate.getDay());
         console.log(myDate.getFullYear());
         console.log(myDate.getHours());
+        console.log(myDate.toString());
+        console.log(myDate.toDateString());
+        console.log(typeof myDate);
+        console.log(myDate.toLocaleString());
+        console.log(myDate.toLocaleString('default',{weekday:"long"}));
+
+        let myCreatedDate = new Date(2020,1,4 ,4,6);
+        console.log(myCreatedDate.toLocaleString());
+
+        let myTimeStamp = Date.now();
+
+        console.log(myTimeStamp);
 
       let button = document.createElement("Button");
       button.innerText = 'click me';
