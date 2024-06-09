@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="lang">
+      <li>java</li>
+    </ul>
+    <script>
+      function addlang(name) {
+        let list = document.createElement("li");
+        //list.innerHTML = `${name}`;
+        let addText = list.appendChild(document.createTextNode(name));
+        document.querySelector(".lang").appendChild(list);
+      }
+      addlang("go");
+      let secLang = document.querySelector("li:nth-child(2)");
+      let newli = document.createElement("li");
+      newli.textContent = "mojo";
+      secLang.replaceWith(newli);
+    </script>
+  </body>
+</html>

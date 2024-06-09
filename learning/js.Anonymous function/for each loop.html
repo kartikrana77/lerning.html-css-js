@@ -15,6 +15,9 @@
 
       arr2.forEach((key) => console.log(key));
 
+      let value = arr2.forEach((key) => key);
+      console.log(value);
+
       arr2.forEach((key, index, arr) => console.log(key, index, arr));
 
       let squ = arr.map((num) => num * num);
@@ -22,7 +25,6 @@
 
       let even = arr.filter((num) => num % 2 === 0);
       console.log(even);
-
 
       let arr3 = [
         {
@@ -36,12 +38,12 @@
         },
 
         {
-            langName: "ruby",
-            fileName: 'rb'
-        }
+          langName: "ruby",
+          fileName: "rb",
+        },
       ];
 
-      arr3.forEach(i=> console.log(i.langName));
+      arr3.forEach((i) => console.log(i.langName));
     </script>
   </body>
 </html>

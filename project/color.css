@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+}
+
+#cont{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cont-box{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border: 2px solid black;
+    color: transparent;
+}
+
+.cont-box:nth-child(1){
+    background-color: gray;
+}
+.cont-box:nth-child(2){
+    background-color: white;
+}
+.cont-box:nth-child(3){
+    background-color: aqua;
+}
+.cont-box:nth-child(4){
+    background-color: yellow;
+}
+p {
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+}

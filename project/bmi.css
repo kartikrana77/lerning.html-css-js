@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    background-color: gray;
+}
+
+#b1{
+    height: 30px;
+    width: 100px;
+}
+
+#result{
+    margin-top: 10px;
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+input{
+    height: 25px;
+    width: 150px;
+    font-size: medium;
+    margin-left: 5px;
+}

@@ -1,51 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-    //     let arr = [1,2,3,4,5,6,7,8,9,10];
-    //   let odd =  arr.filter(num => num %2 === 1 );
+      let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-    //   let even = (arr1,arr2) =>{
-    //     for(let i = 0 ; i<arr1.length; i++ ){
-    //         if(arr[i]%2===0){
-    //             arr2.push(arr[i]);
-    //         }
-    //     }
-    //   };
+      let odd = arr1.filter((num) => num % 2 === 1);
 
-    //   let arr3 = [];
-    //   even(arr,arr3);
-    //   console.log(arr3);
+      console.log(odd);
 
-    //     console.log(odd);
+      let newNumb = arr1.filter((num) => num > 4);
 
-    let arr = [1,2,3,4,5];
-    let square = arr.map(num => num * num);
-    console.log(square);
+      console.log(newNumb);
 
-    let map = new Map();
-    map.set('In', 'India');
-    map.set('fr', 'france');
-    map.set('In','India');
-    console.log(map);
 
-    for (const key of map) {
+      const books1 = [
+    { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+    { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
+    { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
+    { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
+    { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
+    { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
+    { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
+    { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
+    { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
+  ];
+
+  let history = books1.filter(bk => bk.genre === 'History' && bk.publish >= 1995);
+  console.log(history);
+
+      //   let even = (arr1,arr2) =>{
+      //     for(let i = 0 ; i<arr1.length; i++ ){
+      //         if(arr[i]%2===0){
+      //             arr2.push(arr[i]);
+      //         }
+      //     }
+      //   };
+
+      //   let arr3 = [];
+      //   even(arr,arr3);
+      //   console.log(arr3);
+
+      //     console.log(odd);
+
+
+      let map = new Map();
+      map.set("In", "India");
+      map.set("fr", "france");
+      map.set("In", "India");
+      console.log(map);
+
+      for (const key of map) {
         console.log(key);
-    }
+      }
 
-    for (const [key , value] of map) {
-        console.log(key +'='+ value);
-    }
+      for (const [key, value] of map) {
+        console.log(key + "=" + value);
+      }
 
-    // for (const key in map) {
-    //     console.log(map[key])
+      // for (const key in map) {
+      //     console.log(map[key])
+      // }
+
+
+
+      let arr = [1, 2, 3, 4, 5];
+      let square = arr.map((num) => num * num);
+      console.log(square);
+
+      let add = arr.map(num => num + 10)
+      .map(num => num + 1)
+      .filter(num => num >= 14);
+      console.log(add);
+
+
+
+      let arr4 = [1,2,3,4,5,6];
+    //   let addFun = (arr)=>{
+    //   let add1 = 0;
+    // // for (const key in arr) {
+    //    add1 += arr[key];
     // }
-        </script>
+    // for (const i of arr) {
+    //     add1 += i;
+    // }
+    //  console.log(add1);
+    //  }
 
-</body>
+    //  addFun(arr4);
+     
+    
+    let sum = arr4.reduce((add,num)=> add + num,0);
+    console.log(sum);
+
+     
+    const shoppingCart = [
+    {
+        itemName: "js course",
+        price: 2999
+    },
+    {
+        itemName: "py course",
+        price: 999
+    },
+    {
+        itemName: "mobile dev course",
+        price: 5999
+    },
+    {
+        itemName: "data science course",
+        price: 12999
+    },
+];
+
+let price = shoppingCart.reduce((add,num)=> add + num.price,0);
+console.log(price);
+    </script>
+  </body>
 </html>

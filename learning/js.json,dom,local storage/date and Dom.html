@@ -8,7 +8,7 @@
   <body>
     <!--<button class="click" onclick="alert(myDate);">time</button>
  
-  --><div class="my-div">Kartik</div>
+    --><div class="my-div">Kartik</div>
     <script>
       let myDate = new Date();
         console.log(myDate);
@@ -33,6 +33,18 @@
       button.classList = 'bt';
       document.querySelector(".my-div").appendChild(button);
       // document.querySelector('.my-div').removeChild(button);
+
+      let div1 = document.createElement('div');
+      div1.id = Math.round(Math.random*10 +1);
+      div1.setAttribute('title',"genrated");
+      div1.style.backgroundColor='green';
+      div1.style.padding='10px';
+      div1.style.margin='10px';
+      //div.innerText = 'hello kartik';
+      let text = document.createTextNode('hello kartik');
+      div1.appendChild(text);
+
+      document.querySelector('body').appendChild(div1);
     </script>
   </body>
 </html>
