@@ -1,26 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>timeout and interval</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>kartik</h1>
+    <button id="stop">stop</button>
+    <br/>
+    <br>
+    <button id="start">start</button>
+    <button id="stop2">stop</button>
     <script>
-        // setTimeout(function(){
-        //     console.log('subha ho gai mamu')
-        // }, 3000);
+      // setTimeout(function(){
+      //     console.log('subha ho gai mamu')
+      // }, 3000);
 
-        let alarm = () => console.log(`subha ho gai mamu , ${new Date()}`);
+      let alarm = () => console.log(`subha ho gai mamu , ${new Date()}`);
 
-        // let timerId = setTimeout(alarm,5000);
-        // console.log(`id = ${timerId}`);
+      // let timerId = setTimeout(alarm,5000);
+      // console.log(`id = ${timerId}`);
 
-        // clearTimeout(timerId);
+      // clearTimeout(timerId);
 
-        let intervalId = setInterval(alarm, 5000);
-        setTimeout(()=> clearInterval(intervalId),10000);
+    //   let name = document.querySelector("h1");
+
+    //   let change = () => {
+    //     name.innerText = "ankit";
+    //   };
+
+    //   let id1 = setTimeout(change, 3000);
+
+    //   document.querySelector("#stop").addEventListener("click", () => {
+    //     clearTimeout(id1);
+    //   });
+
+
+
+
+    //   let intervalId = setInterval(alarm, 5000);
+    //   setTimeout(() => clearInterval(intervalId), 10000);
+
+
+    let start = document.querySelector('#start');
+    let stop = document.querySelector('#stop2');
+    
+
+    let id1;
+    function startFun(){
+         id1 = setInterval(()=>{
+            console.log('hello')
+        },3000);
+    };
+
+    start.addEventListener('click',startFun);
+
+    stop.addEventListener('click',()=>{
+        clearInterval(id1);
+    })
 
     </script>
-</body>
+  </body>
 </html>
