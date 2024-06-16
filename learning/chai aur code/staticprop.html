@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class User {
+            constructor(username){
+                this.username = username
+            }
+            logMe(){
+                console.log(`Username: ${this.username}`);
+            }
+
+            static creatId(){
+                return`123`
+            }
+        }
+
+        const kartik = new User('kartik');
+        // console.log(kartik.creatId());
+
+        class Teacher extends User{
+            constructor(username,email){
+                super(username)
+                this.email =email;
+            }
+
+        }
+
+        let iphone = new Teacher('techno', 'techno@.com');
+        iphone.logMe();
+        // console.log(iphone.creatId());
+    </script>
+</body>
+</html>

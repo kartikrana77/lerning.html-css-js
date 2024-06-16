@@ -17,23 +17,25 @@
     <p>Click on the colors above <br>to change the color of this page !</p>
 
     <script>
-       let box = document.querySelectorAll('.cont-box');
-       let body = document.querySelector('body');
+     let box = document.querySelectorAll('.cont-box');
+     let body = document.querySelector('body');
 
-       box.forEach(()=>{
-        addEventListener('click',(e)=>{
-            console.log(e.target.id);
+     box.forEach((box)=>{
+        box.addEventListener('click',(e)=>{
             switch(e.target.id){
-                case 'gray': body.style.backgroundColor ="gray"
+                case 'gray':body.style.backgroundColor='gray'
                 break;
-                case 'white': body.style.backgroundColor ="white"
+
+                case 'white' : body.style.backgroundColor='white'
                 break;
-                case 'blue': body.style.backgroundColor ="aqua"
+
+                case 'blue' : body.style.backgroundColor='aqua'
                 break;
-                case 'yellow': body.style.backgroundColor ="yellow"
-            };
-        })
-       })
+
+                case 'yellow' : body.style.backgroundColor='yellow'
+            }
+        });
+     })
     </script>
 </body>
 </html>

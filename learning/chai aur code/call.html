@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function SetUsername(username){
+    //complex DB calls
+    this.username = username
+    console.log("called");
+}
+
+function createUser(username, email, password){
+    SetUsername.call(this, username)
+   
+    this.email = email
+    this.password = password
+}
+
+const chai = new createUser("chai", "chai@fb.com", "123")
+console.log(chai);
+    </script>
+</body>
+</html>

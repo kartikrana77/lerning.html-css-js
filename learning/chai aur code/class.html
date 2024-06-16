@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class User{
+            constructor(usrename, email , password){
+                this.usrename = usrename;
+                this.email = email;
+                this.password = password;
+            }
+
+            encryptPassword(){
+                return`${this.password}abc`
+            }
+
+            changeUsername(){
+                return`${this.usrename.toUpperCase()}`
+            }
+        }
+
+        const chai = new User('chai', 'chai@gmail.com', '123');
+        console.log(chai.encryptPassword());
+        console.log(chai.changeUsername());
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mulitiply(num){
+            return num*5
+        }
+
+        mulitiply.power = 2;
+
+        console.log(mulitiply(4));
+        console.log(mulitiply.power);
+        console.log(typeof mulitiply)
+        console.log(mulitiply.prototype);
+
+
+
+        function createUser(username, score){
+    this.username = username
+    this.score = score
+}
+
+createUser.prototype.increment = function(){
+    this.score++
+}
+createUser.prototype.printMe = function(){
+    console.log(`price is ${this.score}`);
+}
+
+const chai = new createUser("chai", 25)
+const tea = createUser("tea", 250)
+
+chai.printMe()
+
+
+/*
+
+Here's what happens behind the scenes when the new keyword 
+is used:
+
+A new object is created: The new keyword initiates the 
+creation of a new JavaScript object.
+
+A prototype is linked: The newly created object gets 
+linked to the prototype property of the constructor 
+function. This means that it has access to properties 
+and methods defined on the constructor's prototype.
+
+The constructor is called: The constructor function is 
+called with the specified arguments and this is bound to
+ the newly created object. If no explicit return value is 
+ specified from the constructor, JavaScript assumes this, 
+ the newly created object, to be the intended return value.
+
+The new object is returned: After the constructor function 
+has been called, if it doesn't return a non-primitive value
+ (object, array, function, etc.), the newly created object 
+ is returned.
+
+*/
+
+let myName = "kartik   ";
+ console.log(myName.length); 
+ //console.log(myName.trim().length)
+   
+ let hero = ['thor', 'spiderman'];
+
+ let heroPower = {
+    thor: 'hammer',
+    spiderman : 'swing',
+ 
+
+ getSpiderPower: function(){
+    console.log(`spidey power is ${this.spiderman}`);
+ }
+};
+
+Object.prototype.hitesh = function(){
+    console.log('hello');
+};
+
+hero.hitesh();
+heroPower.hitesh();
+
+Array.prototype.heyHitesh = function(){
+    console.log(`Hitesh says hello`);
+};
+
+hero.heyHitesh();
+//heroPower.heyHitesh();
+
+
+const User = {
+    name : 'kartik',
+    no : 123,
+};
+
+const Teacher = {
+    makeVideo : true,
+};
+
+const TeacherSupport = {
+    isAvailable : false,
+};
+
+const TaSupport = {
+    makeAssignment : 'js',
+    fullTime : true,
+    __proto__ : TeacherSupport,
+};
+
+console.log(TaSupport);
+
+Teacher.__proto__=User;
+console.log(Teacher);
+
+// modern syntax
+Object.setPrototypeOf(TeacherSupport, Teacher);
+console.log(TeacherSupport);
+
+String.prototype.trueLength = function(){
+    console.log(`${this}`);
+    console.log(this.trim().length);
+};
+myName.trueLength();
+'lubhansh  '.trueLength();
+
+   </script>
+</body>
+</html>
